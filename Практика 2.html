@@ -6,17 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
     <script defer>
-        // Открыть модальное окно
         function openModal() {
             document.getElementById("myModal").style.display = "flex";
         }
-
-        // Закрыть модальное окно
         function closeModal() {
             document.getElementById("myModal").style.display = "none";
         }
 
-        // Закрыть модальное окно при клике вне окна
         window.onclick = function(event) {
             const modal = document.getElementById("myModal");
             if (event.target === modal) {
