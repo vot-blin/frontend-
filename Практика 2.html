@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
+    <link rel="stylesheet" href="style2.css">
     <script defer>
         function openModal() {
             document.getElementById("myModal").style.display = "flex";
         }
+
         function closeModal() {
             document.getElementById("myModal").style.display = "none";
         }
@@ -39,7 +41,6 @@
 
         <div id="logo" style="float:left">
           <img src="C:/Users/User/Downloads/logo.PNG">
-          <p>Logo</p>
         </div>
         <div id="contacts" style="float:right;">
           <i class="fa fa-mobile fa-lg"></i> Группа ЭФБО-09-23
@@ -48,11 +49,11 @@
         <div class="clearfix"></div>
         
       </header>
-        
+    <header>  
         <nav>
             <ul>
-                <a href="#home">Главная</a>
-                <a href="index2.html">Первый семестр</a>
+                <a href="3.html">Главная</a>
+                <a href="5.html">Первый семестр</a>
                 <a href="index2.html">Второй семестр</a>
                 <a href="index2.html">Услуги</a>
                 <a href="index2.html">Авторизация</a>
@@ -63,31 +64,35 @@
     <body>
       <aside>
             <ul>
-                <a href="#element1">Навигация по странице</a>
-                <dl><a href="#element2">Фронтенд</a></dl>
-                <dl><a href="#element3">Бэкенд</a></dl>
+                <a href="#element1" style="font-size:20px;">Навигация по странице</a>
+                <dl><a href="#element2" style="font-size:20px;">Фронтенд</a></dl>
+                <dl><a href="#element3" style="font-size:20px;">Бэкенд</a></dl>
             </ul>
         </aside>
       <main>
             <h1 align="center">Разработка веб-приложений</h1>
             
             <section id="element1">
+            <p>    
                 <img src="C:/Users/User/Downloads/кв.PNG">
                 <h3>Сайт-визитка</h3>
-            </section>
+            </p>
             <body><button onclick="openModal()">Заказать</button></body>
-    
+            </section>
             <section id="element2">
+            <p>    
                 <img src="C:/Users/User/Downloads/кв.PNG">
                 <h3>Корпоративный сайт</h3>
-            </section>
+            </p>
             <body><button onclick="openModal()">Заказать</button></body>
-    
+            </section>
             <section id="element3">
+            <P>    
                 <img src="C:/Users/User/Downloads/кв.PNG">
                 <h3>Интернет-магазин</h3>
-            </section>
+            </p>
             <body><button onclick="openModal()">Заказать</button></body>
+            </section>
             <section id="element4">
                 <p style="font-size:25px;">Сайт-визитка — это веб-страница, на которой представлена главная информация о компании, человеке или продукте, контактные данные, сведения для клиента (цена, фотографии, портфолио) и прочие разделы, например, ответы на часто задаваемые вопросы.</p>
             </section>

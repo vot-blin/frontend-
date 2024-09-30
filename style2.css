@@ -1,0 +1,79 @@
+header {
+    background-color: lavender; /* Цвет фона */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    font-size: 20px; /* Размер текста */
+    padding: 15px; /* Отступ внутри шапки */
+}
+nav {
+    padding: 15px; /* Отступы для навигационного меню */
+}
+nav a {
+    color: #333; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 10px; /* Отступы для ссылок */
+}
+nav a:hover {
+    color: plum; /* Цвет текста при наведении */
+}
+nav a:active {
+    color: plum; /* Цвет текста при клике */
+}
+h1 {
+    color: #222; /* Цвет заголовка первого уровня */
+    font-size: 35px; /* Размер заголовка */
+}
+h2 {
+    color: #333; /* Цвет заголовка второго уровня */
+    font-size: 30px; /* Размер заголовка */
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+article, section, aside {
+    padding: 10px; /* Отступы */
+    border: 1px solid black; /* Границы */
+    background-color: #fafafa; /* Фоновый цвет */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+img {
+    max-width: 100%; /* Максимальная ширина */
+    margin: 10px 0; /* Отступы сверху и снизу */
+}
+.product-card {
+    border: 1px solid #ddd; /* Границы карточки */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    transition: box-shadow 0.3s; /* Эффект при наведении */
+}
+.product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
+}
+button {
+    background-color: plum; /* Цвет фона */
+    color: white; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    padding: 10px 20px; /* Отступы */
+    border: none; /* Убираем границы */
+    border-radius: 5px; /* Закругление углов */
+    transition: background-color 0.3s; /* Эффект при наведении */
+}
+button:hover {
+    background-color: plum; /* Цвет фона при наведении */
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px; /* Отступы внутри полей ввода */
+    border: 1px solid #ccc; /* Границы */
+    border-radius: 4px; /* Закругление углов */
+    width: 80%; /* Ширина полей */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+input[type="submit"] {
+    background-color: plum; /* Цвет фона кнопки отправки */
+    color: white; /* Цвет текста */
+    transition: background-color 0.3s; /* Эффект при наведении на кнопку отправки */
+}
+input[type="submit"]:hover {
+    background-color: plum; /* Цвет фона кнопки отправки при наведении */
+}
