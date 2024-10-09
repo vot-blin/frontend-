@@ -1,0 +1,227 @@
+header {
+    background-color: rgb(250, 216, 250); /* Цвет фона */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    font-size: 20px; /* Размер текста */
+    padding: 15px; /* Отступ внутри шапки */
+}
+nav {
+    padding: 15px; /* Отступы для навигационного меню */
+}
+nav a {
+    color: #333; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 10px; /* Отступы для ссылок */
+    font-size: 20px;
+}
+nav a:hover {
+    color: plum; /* Цвет текста при наведении */
+}
+nav a:active {
+    color: plum; /* Цвет текста при клике */
+}
+h1 {
+    color: #222; /* Цвет заголовка первого уровня */
+    font-size: 35px; /* Размер заголовка */
+}
+h2 {
+    color: #333; /* Цвет заголовка второго уровня */
+    font-size: 30px; /* Размер заголовка */
+}
+h3 {
+    color: #444; /* Цвет заголовка третьего уровня */
+    font-size: 25px; /* Размер заголовка */
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+article, section, aside {
+    padding: 10px; /* Отступы */
+    border: 1px solid black; /* Границы */
+    background-color: #fafafa; /* Фоновый цвет */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+img {
+    max-width: 100%; /* Максимальная ширина */
+    margin: 10px 0; /* Отступы сверху и снизу */
+}
+video {
+    display: block; /* Отображать видео как блочный элемент */
+    width: 80%; /* Видео займет всю ширину родительского элемента */
+    max-width: 500px; /* Максимальная ширина видео */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    border-radius: 5px; /* Скругление углов видео */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень видео */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+table {
+    width: 90%; /* Ширина таблицы */
+    border-collapse: collapse; /* Объединение границ ячеек */
+}
+th {
+    background-color: rgb(170, 240, 170);
+}
+button {
+    background-color: plum; /* Цвет фона */
+    color: white; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    padding: 10px 20px; /* Отступы */
+    border: none; /* Убираем границы */
+    border-radius: 5px; /* Закругление углов */
+    transition: background-color 0.3s; /* Эффект при наведении */
+    cursor: pointer;
+}
+button:hover {
+    background-color: plum; /* Цвет фона при наведении */
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+button:active {
+    background-color: plum; /* Цвет фона при клике */
+}
+.first {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main-heading {
+    color: #222; 
+    font-size: 40px; /* Размер шрифта */
+    text-align: center; /* Выравнивание по центру */
+    margin-top: 20px; /* Отступ сверху */
+}
+.main-heading:hover {
+    color: plum; 
+}
+.sub-heading {
+    color: #000; 
+    font-size: 28px; /* Размер шрифта */
+    text-align: left; /* Выравнивание по левому краю */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+.sub-heading:hover {
+    color: plum;
+}     
+.text-paragraph {
+    color: #000; 
+    font-size: 22px; /* Размер шрифта */
+    line-height: 1.6; /* Межстрочный интервал */
+    margin: 20px 0; /* Отступы сверху и снизу */
+    padding: 0 10px; /* Внутренние отступы слева и справа */
+}
+.text-paragraph:hover {
+    color: #000; /* Черный цвет при наведении */
+}
+.product-card {
+    border: 1px solid #ddd; /* Светлая граница */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    padding: 20px; /* Внутренние отступы */
+    background-color: #fff; /* Белый фон */
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавные переходы */
+    width: 300px; /* Ширина карточки */
+    margin: 15px; /* Внешние отступы */
+}
+.product-card:hover {
+    transform: translateY(-10px); /* Поднятие карточки */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Усиленная тень */
+    background-color: #f0f8ff; /* Светло-голубой фон при наведении */
+}
+.product-card h3 {
+    color: #333; 
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+.product-card:hover h3 {
+    color: plum; 
+}
+.highlight {
+    background-color: plum; 
+    border-left: 5px solid plum; /* Левый бордер */
+    padding-left: 10px; /* Внутренний отступ слева */
+}
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Фиксированное позиционирование */
+    z-index: 1; /* Поверх других элементов */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+}
+.modal-content {
+    background-color: white; /* Белый фон модального окна */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 8px; /* Закругленные углы */
+    width: 400px; /* Ширина модального окна */
+}
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: plum;
+    text-decoration: none;
+}
+#orderForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#orderForm input,
+#orderForm select,
+#orderForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#orderForm input[type="submit"] {
+    background-color: plum;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#orderForm input[type="submit"]:hover {
+    background-color: plum;
+}
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.social-links a {
+    margin: 0 10px;
+}
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+.nav-menu { 
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; /* Flexbox для навигационного меню */ 
+    justify-content: space-around; /* Равномерное распределение */ 
+}
+.product-card { 
+    background-color: #f4f4f4; 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    position: relative; /* Для абсолютного позиционирования вложенного элемента */ 
+}
+.grid-container { 
+    display: grid; /* Grid Layout */ 
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */ 
+    grid-template-rows: repeat(2, auto); /* 2 строки */ 
+    gap: 10px; /* Промежуток между элементами */ 
+    padding: 20px; 
+}
