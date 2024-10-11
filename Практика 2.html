@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="st.css">
+    <script defer>
+        function openModal() {
+            document.getElementById("myModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("myModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+        function validateForm(event) {
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+            if (name === "" || email === "" || phone === "") {
+                alert("Пожалуйста, заполните все поля!");
+                return false;
+            } else {
+                alert("Форма успешно отправлена!");
+                closeModal();
+            }
+        }
+    </script>   
+</head>
+<body>
+    <header style="padding-top:5px;">
+
+        <div id="logo" style="float:left">
+          <img src="C:/Users/User/Downloads/logo.PNG">
+        </div>
+        <div id="contacts" style="float:right;">
+          <i class="fa fa-mobile fa-lg"></i> Группа ЭФБО-09-23
+          <i class="fa fa-envelope fa-lg"></i> Доронина Мария Анатольевна
+        </div>
+        <div class="clearfix"></div>
+        
+      </header>
+    <header>  
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <a href="3.html">Главная</a>
+                <a href="5.html">Первый семестр</a>
+                <a href="index2.html">Второй семестр</a>
+                <a href="index2.html">Услуги</a>
+                <a href="index2.html">Авторизация</a>
+            </ul>
+        </nav>
+    </header>
+    
+    <body>
+      <aside>
+            <ul>
+                <a href="#element1" style="font-size:20px;">Навигация по странице</a>
+                <dl><a href="#element2" style="font-size:20px;">Фронтенд</a></dl>
+                <dl><a href="#element3" style="font-size:20px;">Бэкенд</a></dl>
+            </ul>
+        </aside>
+      <main>
+            <h1 class="main-heading">Разработка веб-приложений</h1>
+            <div class="first">
+            <section id="element1" class="product-card">
+            <p>    
+                <img src="C:/Users/User/Downloads/кв.PNG">
+                <h3>Сайт-визитка</h3>
+            </p>
+            <body><button onclick="openModal()">Заказать</button></body>
+            </section>
+            <section id="element2" class="product-card">
+            <p>    
+                <img src="C:/Users/User/Downloads/кв.PNG">
+                <h3>Корпоративный сайт</h3>
+            </p>
+            <body><button onclick="openModal()">Заказать</button></body>
+            </section>
+            <section id="element3" class="product-card">
+            <P>    
+                <img src="C:/Users/User/Downloads/кв.PNG">
+                <h3>Интернет-магазин</h3>
+            </p>
+            <body><button onclick="openModal()">Заказать</button></body>
+            </section>
+            </div>
+            <section id="element4">
+                <p class="text-paragraph">Сайт-визитка — это веб-страница, на которой представлена главная информация о компании, человеке или продукте, контактные данные, сведения для клиента (цена, фотографии, портфолио) и прочие разделы, например, ответы на часто задаваемые вопросы.</p>
+            </section>
+            <section id="element5">
+                <p class="text-paragraph">Корпоративный сайт — это интернет-ресурс, на котором представлена подробная информация о деятельности организации или предприятия. На сайте обычно содержится описание услуг, история развития, условия сотрудничества, онлайн-сервисы, открытые вакансии, интересные предложения, новости и прочие факты и события, отражающие деятельность компании.</p>
+            </section>
+            <section id="element6">
+                <p class="text-paragraph">Интернет-магазин — это сайт, который торгует товарами посредством сети Интернет.
+
+                    Он позволяет пользователям онлайн, в своём браузере или через мобильное приложение, сформировать заказ на покупку, выбрать способ оплаты и доставки заказа, оплатить заказ.</p>
+            </section>
+        </main>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <form id="orderForm" onsubmit="validateForm(event)">
+                    <h2>Разработка веб-приложения</h2>
+                    <h3>Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</h3>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" required><br><br>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                    <label for="country">Страна:</label>
+                    <select id="country">
+                        <option value="Russia">Россия</option>
+                        <option value="Belarus">Беларусь</option>
+                        <option value="Germany">Германия</option>
+                    </select><br><br>
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date"><br><br>
+                    <label for="comments">Комментарии:</label>
+                    <textarea id="comments" rows="5"></textarea><br><br>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p align="center">&copy; 2024 Все права защищены.</p>
+            <ul class="social-links">
+                <li>
+                    <a href="https://vk.com" target="_blank" rel="noopener noreferrer">
+                        <img src="C:/Users/User/Downloads/вк.PNG" alt="vkontakte"/>
+                    </a>
+                </li>
+            </ul>
+        </footer>          
+    </body>    
+    
+</body>
+</html>
