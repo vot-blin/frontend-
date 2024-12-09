@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="page.css">
+     </head>
+<body>
+    <header style="padding-top:5px;">
+        <div id="logo" style="float:left">
+            <img src="C:/Users/User/Downloads/logo.PNG">
+        </div>
+        <div id="contacts" style="float:right;">
+            <i class="fa fa-mobile fa-lg"></i> Группа ЭФБО-09-23
+            <i class="fa fa-envelope fa-lg"></i> Доронина Мария Анатольевна
+        </div>
+        <div class="clearfix"></div>
+    </header>
+    <header>
+
+        <nav>
+            <ul>
+                <a href="str5.html" style="font-size:20px;">Главная</a>
+                <a href="str2.html" style="font-size:20px;">Первый семестр</a>
+                <a href="" style="font-size:20px;">Второй семестр</a>
+            </ul>
+        </nav>
+        
+    </header>
+    <body>
+      <aside>
+            <ul>
+                <a href="#element1" style="font-size:20px;">Навигация по странице</a>
+                <dl><a href="#element2" style="font-size:20px;">Лекции</a></dl>
+                <dl><a href="#element3" style="font-size:20px;">Практики</a></dl>
+                <dl><a href="#element3" style="font-size:20px;">Адрес вуза</a></dl>
+                <dl><a href="#element3" style="font-size:20px;">Рабочая программа</a></dl>
+            </ul>
+        </aside>
+        <main>
+            <h1>Первый семестр</h1>
+            <img src="C:/Users/User/Downloads/logo.PNG" alt="Студент" class="student-photo" style="width: 100px; height: 100px;">
+            <h3>Лекции</h3>
+        </main>
+        <button id="toggleLecturesBtn">Показать лекции</button>  <!-- Added button -->
+            <table>
+                <tr><th>Номер</th><th>Тема</th><th>Посещение</th></tr> 
+                <tr><td>1</td><td>Основы языка HTML</td><td><input type="checkbox"></td></tr> 
+                <tr><td>2</td><td>Углубленное изучение HTML</td><td><input type="checkbox"></td></tr> 
+                <tr><td>3</td><td>Основы работы с CSS</td><td><input type="checkbox"></td></tr> 
+                <tr><td>4</td><td>Адаптивная вёрстка Flexbox и Grid Layout</td><td><input type="checkbox"></td></tr> 
+                <tr><td>5</td><td>Bootstrap - работа с фреймворком</td><td><input type="checkbox"></td></tr> 
+                <tr><td>6</td><td>Основы языка JavaScript</td><td><input type="checkbox"></td></tr> 
+                <tr><td>7</td><td>Работа с DOM и событиями в JavaScript</td><td><input type="checkbox"></td></tr> 
+                <tr><td>8</td><td>Введение в GitHub и GitHub Pages</td><td><input type="checkbox"></td></tr> 
+            </table>
+        
+            <h3>Практики</h3>
+        </main>
+        <table>
+            <tr><th>Номер</th><th>Тема</th><th>Посещение</th><th>Выполнение</th></tr> 
+            <tr><td>1</td><td>Основы языка HTML</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>2</td><td>Формы и кнопки в HTML</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>3</td><td>Таблицы и  интерактивные элементы HTML</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>4</td><td>Основы работы с CSS</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>5</td><td>Работа с классами в CSS</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>6</td><td>Работа с сетками и разметкой в HTML</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>7</td><td>Адаптивная вёрстка</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>8</td><td>Bootstrop</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>9</td><td>Основы языка JavaScript</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>10</td><td>Базовые задачи на JS</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>11</td><td>DOM-структура приложений и работа с объектами в языке JS</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>12</td><td>Встраивание скриптов</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+            <tr><td>13</td><td>Отладка сценариев</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+            <tr><td>14</td><td>Анимации и работа с ними</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr> 
+            <tr><td>15</td><td>GitHub</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+            <tr><td>16</td><td>Защита проекта</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+        </table>
+        <main>
+            <h3>Занятия проходят по адресу:</h3>
+        </main>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A11f6a9a6538923cbd4546c16ff1e01cf00a1a05441df59ad5944e3667a62684a&amp;source=constructor" width="500" height="500" frameborder="0">
+        </iframe>
+        <main>
+            <label for="novel"><h3>Рабочая программа</h3></label></br>
+            <object data="Руководство по эксплуатации.pdf" type="application/pdf"
+            width="700" height="900">
+            <p><a href="Руководство по эксплуатации.pdf">pdf file</a></p>
+        </object>
+        </main>
+        <footer>
+            <p align="center">&copy; 2024 Все права защищены.</p>
+            <ul class="social-links">
+                <li>
+                    <a href="https://vk.com" target="_blank" rel="noopener noreferrer">
+                        <img src="C:/Users/User/Downloads/вк.PNG" alt="vkontakte"/>
+                    </a>
+                </li>
+            </ul>
+        </footer>          
+    </body>    
+    <script>
+        window.onscroll = function() {
+            let scrollButton = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollButton.style.display = "block"; // Показываем кнопку
+            } else {
+                scrollButton.style.display = "none"; // Скрываем кнопку
+            }
+        };
+
+        // Прокрутка вверх по клику на кнопку
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'}); // Плавная прокрутка
+        }
+    </script>
+    <button class="scroll-to-top" onclick="scrollToTop()">⬆️</button>
+    <script src="script1.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('toggleLecturesBtn');
+    const lectureTable = document.querySelector('table');
+
+    if (toggleButton && lectureTable) {
+        toggleButton.addEventListener('click', () => {
+            if (lectureTable.classList.contains('hidden')) {
+                lectureTable.classList.remove('hidden');
+                lectureTable.classList.add('visible');
+                toggleButton.textContent = 'Скрыть лекции';
+            } else {
+                lectureTable.classList.remove('visible');
+                lectureTable.classList.add('hidden');
+                toggleButton.textContent = 'Показать лекции';
+            }
+        });
+    }
+});
+    </script>
+</body>
+</html>
